@@ -1,0 +1,11 @@
+from chatterbot import ChatBot
+from chatterbot.trainers import ChatterBotCorpusTrainer
+
+# Create a chatbot instance
+chatbot = ChatBot("MyChatbot")
+
+# Create a trainer
+trainer = ChatterBotCorpusTrainer(chatbot)
+
+# Train the chatbot on English language data
+trainer.train("chatterbot.corpus.english")
